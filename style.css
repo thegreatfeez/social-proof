@@ -1,0 +1,156 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General Styles */
+  body {
+    font-family: "League Spartan", sans-serif;
+    background-color: hsl(300, 24%, 96%);
+    color: hsl(300, 43%, 22%);
+    line-height: 1.6;
+  }
+  
+  .container {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 100px 20px;
+  }
+  
+  /* Product Section */
+  .product-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  .product-content {
+    width: 50%;
+  }
+  
+  .product-content h2 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    width: 58%;
+    line-height: 100%;
+  }
+  
+  .product-content p {
+    font-size: 0.7rem;
+    color: hsl(303, 10%, 53%); 
+    width: 60%;
+    font-weight: 580;
+  }
+  
+  .stars-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .star-item {
+    display: flex;
+    align-items: center;
+    background-color: hsl(300, 24%, 96%);
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .star-item img {
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+  }
+  
+  .star-item span {
+    font-size: 0.7rem;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    padding-left: 15px;
+  }
+
+  #guru{
+    position: relative;
+    right: 40px;
+  }
+  #review{
+    position: relative;
+    right: 80px;
+  }
+  
+  /* Customer Reviews */
+  .customer-reviews {
+    display: flex;
+    gap: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  .review-card {
+    background-color: hsl(300, 43%, 22%); 
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    /* min-width: 300px; */
+  }
+  
+  .review-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .reviewer-info h5 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  .reviewer-info .verified {
+    font-size: 0.8rem;
+    color: hsl(333, 80%, 67%);
+  }
+  
+  .review-text {
+    font-size: 0.7rem;
+    margin-top: 15px;
+    font-style: italic;
+    width:75%;
+  }
+  #irene{
+   position: relative;
+   top: 15px;
+  }
+  #anne{
+    position: relative;
+    top: 30px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .product-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .product-content,
+    .stars-section {
+      width: 100%;
+    }
+  
+    .customer-reviews {
+      flex-direction: column;
+    }
+  }
