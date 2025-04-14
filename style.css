@@ -14,6 +14,9 @@
   }
   
   .container {
+    background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat, no-repeat;
     background-color: hsl(0, 0%, 100%);
     max-width: 1200px;
     margin: 70px auto;
